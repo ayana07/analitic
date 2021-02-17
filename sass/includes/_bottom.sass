@@ -1,0 +1,159 @@
+.bottom
+    position: relative
+    background: url(../img/bground-bottom.png)
+    max-height: auto
+    background-size: cover
+    background-repeat: no-repet
+    padding-top: 255px
+
+.pricing
+    justify-content: center
+    &__info
+        text-align: center
+        h1 
+            font-size: 40px
+            color: var(--white-color)
+        p 
+            font-weight: normal
+            font-size: 18px
+            color: var(--grey-color)
+            margin-top: 30px
+.pricing-block__cards
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    margin-top: 80px
+    margin-bottom: 100px
+    flex-wrap: wrap
+.pricing-block__card
+    padding: 25px
+    max-width: 340px
+    max-height: 440px
+    background: var(--backgr-card)
+    opacity: 0.7
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2)
+    border-radius: 30px
+    text-align: center
+    margin-right: 80px
+    transition: .9s all
+    h2
+        font-size: 30px
+        font-weight: bold
+        color: var(--white-color)
+        margin-bottom: 10px
+    p 
+        font-size: 18px
+        font-weight: normal
+        color: var(--grey-color)
+        margin-bottom: 37px
+    &:hover
+        transition: .9s all
+        background:  #FFFFFF
+        h4
+            color: var(--dark-color)
+        h2
+            color: var(--dark-color)
+        .card__button
+            background: var(--pink-color)
+            border: none
+
+.card__liner
+    position: relative
+    width: 220px
+    height: 1px
+    background: var(--bacgr-liner)
+.card__pricing
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 30px
+    color: #fff
+    h2
+        font-weight: bold
+        font-size: 40px
+    h4
+        font-weight: bold
+        font-size: 20px
+.card__per p
+    font-size: 16px
+    font-weight: normal
+    color: var(--grey-color)
+.card__button
+    text-align: center
+    margin-top: 40px
+    padding: 10px 80px
+    border: 1px solid var(--bacgr-liner)
+    box-sizing: border-box
+    border-radius: 68px
+    color: var(--white-color)
+    &__btns 
+        font-size: 16px
+        color: var(--white-color)
+
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 69px
+    border-top: solid 1px var(--grey-color)
+    &__logo
+        margin-left: 12px
+        display: flex
+        align-items: center
+    &__logo
+        &:hover path 
+            fill: var(--pink-color)
+    &__logos
+        display: flex
+        align-items: center
+        transition: .6s all
+    &__logo h3 
+        margin-left: 13px
+        text-transform: uppercase
+        color: var(--white-color)
+    &__nav-item
+        font-size: 16px
+        color: var(--grey-color)
+        transition: .6s
+        // margin-left: 30px
+        &:hover
+            color: var(--pink-color)
+    &__nav-link
+        transition: .6s all
+        font-size: 16px
+        color: var(--grey-color)
+        margin-left: 40px
+        &:hover
+            color: var(--pink-color)
+    &__social i 
+        font-size: 35px
+        color: var(--pink-color)
+        margin-right: 40px
+
+
+@media screen and ( max-width: 996px)
+    .pricing.container
+        .pricing-block__cards
+            text-align: center
+    .pricing-block__card
+        margin-top: 20px
+    .footer__nav-item
+        display: none
+    .automated
+        display: block
+        text-align: center
+        margin: 50px auto
+        justify-content: center
+    .mainscreen
+        display: none
+    .features__icons
+        display: block
+
+@media screen and (max-width: 400px)
+    .footer__social
+        display: none
+    .text__block
+        width: 100%
+    .pricing__info
+        padding-top: 80px
